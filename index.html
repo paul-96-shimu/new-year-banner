@@ -6,46 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>banner table</title>
     <style>
-        body {
-            font-family: work sens;
-            margin: 0;
-            padding: 0;
-        }
-
         .banner {
-            background-color: brown;
-            color: aquamarine;
+            background-color: lightgray;
+            color: #FFF;
             padding: 20px;
             width: 1600px;
             height: 808px;
         }
 
-        .banner-table {
+        .my-plans-content {
+            max-width: 800px;
             width: 100%;
-            max-width: 1200px;
-            margin: 0;
-            border-collapse: collapse;
+            text-align: center;
+            /* background-color: #ffffff; */
+            border-radius: 10px;
+            padding: 20px;
+            /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
         }
 
-        .banner-table td {
-            padding: 010px 20px;
-            vertical-align: middle;
+        .banner-title {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
         }
 
-        .banner-logo {
-            font-size: 24px;
-            font-weight: bold;
-
+        /* Table styling */
+        table {
+            width: 100%;
+            /* border-collapse: collapse; */
+            margin-top: 20px;
         }
 
-        .banner-text {
+
+        .skill-icon {
+
+            width: 40px;
+            height: 40px;
+        }
+
+        .skill-title {
+            display: flex;
             font-size: 18px;
+
         }
 
-        .banner-button {
-            background-color: blanchedalmond;
-            padding: 10px 15px;
-            border-radius: 5px;
+        .skill-description {
+            font-size: 14px;
+            color: #555;
         }
     </style>
 </head>
@@ -54,15 +61,69 @@
     <div class="banner">
         <table class="banner-table">
             <tr>
-                <td class="">logo</td>
-                <td class="banner-text">All Thinks Are Possible If You believe
-                </td>
-                <td>
-                    <a href="#" class="banner-button">contactus</a>
-                </td>
+                All Thinks Are Possible If You believe
+
+                <p>There are many variations of passages of Lorem Ipsum available, but the
+                    majority have suffered alteration in some form, by injected humour, or randomized words.</p>
+
+                <button
+                    style="font-size:20px;background-color:#F15B22;color: #FFF;border-radius: 5px; text-align: right;font-style: normal;font-weight: 600;line-height: normal;padding: 20px 25px;width: 160px;;">contact
+                    us</button>
+
             </tr>
         </table>
     </div>
+    <div class="banner-contain">
+        <table class="banner-text">
+            <tr>
+                <td><img class="profil-pic" src="images/person.png" alt=""></td>
+                <td>
+                    <h3>My failures of previous year</h3>
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                        classical Latin literature from 45 BC, making it over 2000 years old. Richard McClin tock.</p>
+                    <ul>
+                        <li>Contrary to popular belief, is not simply.</li>
+                        <li>Contrary to popular belief.</li>
+                        <li>Contrary to popular , is not simply.</li>
+                        <li>Contrary to popular simply.</li>
+                    </ul>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="my-plans-content">
+        <h1 class="banner-title">My Plans</h1>
+        <table>
+
+            <tr>
+                <td><img src="images/icons/smoke.png" alt=" Smoking Habit" class="icon"></td>
+                <td class="skill-title">smoking Habit</td>
+                <td class="skill-description">I want to end</td>
+
+
+
+
+                <td>
+                    <img src="images/icons/ecom.png" alt=" e-commerce">
+                <td class="skill-title">e-commerce</td>
+
+                <td class="skill-description">I want to develop</td>
+
+
+
+                <td>
+                    <img src="images/icons/js.png" alt=" Javascript">
+                </td>
+                <td class="skill-title">Javascript</td>
+
+                <td class="skill-description"> want to learn </td>
+
+            </tr>
+        </table>
+    </div>
+
 </body>
 
 </html>

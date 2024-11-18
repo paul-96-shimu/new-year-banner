@@ -1,0 +1,130 @@
+/* General body style */
+.body {
+  width: 1600px;
+  margin: 0 auto; /* Centers the container */
+}
+
+/* Header Section */
+.header {
+  background-color: lightgray;
+  background-image: url("../images/banner/banner2.png");
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.banner {
+  display: table;
+  width: 100%;
+  color: #151414;
+  font-size: 65px;
+  font-family: "Work Sans";
+  align-items: center;
+  justify-content: space-between;
+  margin: 100px 200px;
+}
+
+.banner-title {
+  text-align: center;
+  color: #151414;
+  font-family: "Work Sans";
+  font-size: 65px;
+  font-weight: 700;
+}
+
+.banner-description {
+  display: block;
+  color: #444343;
+  text-align: right;
+  font-family: "Work Sans";
+  font-size: 16px;
+  padding: 16px 26px;
+}
+
+.banner-content {
+  padding: 120px 0px 100px 450px;
+}
+
+/* Failures Section */
+.my-failures {
+  padding: 100px;
+  margin: 100px;
+}
+
+.my-failures .section-title {
+  color: #151414;
+  font-family: "Work Sans";
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.my-failures .section-description {
+  color: #444343;
+  font-family: "Work Sans";
+  font-size: 16px;
+  width: 400px;
+}
+
+.my-failures table {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.profil-pic img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+/* Skill Section */
+.skills-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skill {
+  padding: 25px;
+}
+
+.skill img {
+  width: 60px;
+  height: 60px;
+}
+
+/* Footer Section */
+footer {
+  background-color: #151414;
+  color: white;
+  padding: 60px;
+}
+
+footer table {
+  width: 100%;
+}
+
+.section-title {
+  font-family: "Work Sans";
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.section-description {
+  font-family: "Work Sans";
+  font-size: 16px;
+  margin-right: 100px;
+  width: 485px;
+}
+
+.Subscribe-title {
+  font-family: "Work Sans";
+  font-size: 25px;
+  font-weight: 600;
+}
+
+input[type="email"] {
+  width: 325px;
+  height: 64px;
+}
