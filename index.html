@@ -6,13 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>banner table</title>
     <style>
-        .banner {
-            background-color: lightgray;
-            color: #FFF;
-            padding: 20px;
-            width: 1600px;
-            height: 808px;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 100px;
+            padding: 100px;
+
         }
+
+
+
+
+
+
+        .btn {
+            background-color: #FF5722;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+
+        }
+
 
         .my-plans-content {
             max-width: 800px;
@@ -24,64 +39,62 @@
             /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
         }
 
-        .banner-title {
-            font-size: 32px;
-            color: #333;
-            margin-bottom: 20px;
-        }
 
-        /* Table styling */
+
+
         table {
             width: 100%;
-            /* border-collapse: collapse; */
+            border-collapse: collapse;
             margin-top: 20px;
         }
 
-
-        .skill-icon {
-
-            width: 40px;
-            height: 40px;
+        .header-bg {
+            background-image: url("../images/banner/banner2.png");
+            background-repeat: no-repeat;
+            height: 800px;
         }
 
-        .skill-title {
-            display: flex;
-            font-size: 18px;
+        .footer-text {
+            background-color: black;
 
+            color: #FFF;
+            height: 600px;
+            width: 1600px;
+            text-align: left;
         }
 
-        .skill-description {
-            font-size: 14px;
-            color: #555;
+        .footer-text td {
+            padding: 100px;
         }
     </style>
 </head>
 
 <body>
-    <div class="banner">
-        <table class="banner-table">
-            <tr>
-                All Thinks Are Possible If You believe
+    <table>
 
-                <p>There are many variations of passages of Lorem Ipsum available, but the
-                    majority have suffered alteration in some form, by injected humour, or randomized words.</p>
+        <!-- Hero Section -->
+        <tr class="header-bg">
 
-                <button
-                    style="font-size:20px;background-color:#F15B22;color: #FFF;border-radius: 5px; text-align: right;font-style: normal;font-weight: 600;line-height: normal;padding: 20px 25px;width: 160px;;">contact
-                    us</button>
 
-            </tr>
-        </table>
-    </div>
-    <div class="banner-contain">
-        <table class="banner-text">
+            <td style="text-align: right; padding-right: 30px;">
+                <h1>All Things Are Possible If You Believe</h1>
+                <h2>There are many variations of passages of Lorem Ipsum available</h2>
+                <button class="btn">Contact Us</button>
+            </td>
+
+        </tr>
+
+        <!-- Failures Section -->
+        <table class="Failures-text">
             <tr>
                 <td><img class="profil-pic" src="images/person.png" alt=""></td>
                 <td>
-                    <h3>My failures of previous year</h3>
-                    <p>
-                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                        classical Latin literature from 45 BC, making it over 2000 years old. Richard McClin tock.</p>
+                    <h3 style="font-size: 30px;">My failures of previous year</h3>
+                    <p style="width: 525px;">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
+                        of
+                        classical Latin literature from 45 BC, making it over 2000 years old. Richard McClin tock.
+                    </p>
                     <ul>
                         <li>Contrary to popular belief, is not simply.</li>
                         <li>Contrary to popular belief.</li>
@@ -92,38 +105,58 @@
             </tr>
 
         </table>
-    </div>
-    <div class="my-plans-content">
-        <h1 class="banner-title">My Plans</h1>
+
+        <!-- My Plans Section -->
+        <tr>
+            <td class="section">
+                <h2 style="text-align: center; margin: 100px;">My Plans</h2>
+                <table class="plans-table">
+                    <tr>
+                        <td><img src="images/icons/web.png" alt="Web Development"><br>Web
+                            Development<br><span>I want to start</span></td>
+                        <td><img src="images/icons/js.png" alt="JavaScript"><br>JavaScript<br><span>I want
+                                to learn</span></td>
+                        <td><img src="images/icons/smoke.png" alt="No Smoking"><br>Smoking
+                            Habit<br><span>I want to end</span></td>
+                        <td><img src="images/icons/ecom.png" alt="Ecommerce"><br>Ecommerce<br><span>I
+                                want to develop</span></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Footer Section -->
+
         <table>
 
-            <tr>
-                <td><img src="images/icons/smoke.png" alt=" Smoking Habit" class="icon"></td>
-                <td class="skill-title">smoking Habit</td>
-                <td class="skill-description">I want to end</td>
 
 
-
+            <tr class="footer-text">
 
                 <td>
-                    <img src="images/icons/ecom.png" alt=" e-commerce">
-                <td class="skill-title">e-commerce</td>
-
-                <td class="skill-description">I want to develop</td>
-
-
-
-                <td>
-                    <img src="images/icons/js.png" alt=" Javascript">
+                    <h3>Future</h3>
+                    <p>There are many variations of passages of Lorem Ipsum available...</p>
+                    <p>Email: info@example.com<br>Phone: 0123456789</p>
+                    <img src="images/icons/fb.png" alt="">
+                    <img src="images/icons/youtube.png" alt="">
+                    <img src="images/icons/twitter.png" alt="">
                 </td>
-                <td class="skill-title">Javascript</td>
 
-                <td class="skill-description"> want to learn </td>
+                <td>
+                    <h3>Subscribe</h3>
+                    <input type="email" placeholder="Enter your email">
+                    <br>
+                    <button class="btn">Subscribe</button>
+                </td>
 
             </tr>
-        </table>
-    </div>
 
+        </table>
+        </tr>
+    </table>
+    </td>
+    </tr>
+    </table>
 </body>
 
 </html>
